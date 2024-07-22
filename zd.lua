@@ -11,6 +11,7 @@ function Kavo:DraggingEnabled(frame, parent)
         
     parent = parent or frame
     
+    -- Тут начинается приступ говнокода 5 степени :)
     local dragging = false
     local dragInput, mousePos, framePos
 
@@ -56,29 +57,41 @@ local themes = {
 local themeStyles = {
     RJTheme1 = {
 	-- Цвет фона у Секций
-    SchemeColor = Color3.fromRGB(255,250,250),
+    SchemeColor = Color3.fromRGB(112, 112, 112),
 	-- Цвет фона в правой части UI
-	Background = Color3.fromRGB(255,250,250),
+	Background = Color3.fromRGB(15,15,15),
 	-- Цвет фона в левой части UI
-    Header = Color3.fromRGB(255,250,250),
+    Header = Color3.fromRGB(15,15,15),
 	-- Цвет текста
-    TextColor = Color3.fromRGB(0,0,0),
+    TextColor = Color3.fromRGB(255,255,255),
 	-- Цвет фона у кнопок
-    ElementColor = Color3.fromRGB(255,250,250)
+    ElementColor = Color3.fromRGB(20, 20, 20)
     },
     RJTheme2 = {
     -- Цвет фона у Секций
-    SchemeColor = Color3.fromRGB(255,250,250),
+    SchemeColor = Color3.fromRGB(139,123,139),
 	-- Цвет фона в правой части UI
-	Background = Color3.fromRGB(255,250,250),
+	Background = Color3.fromRGB(15,15,15),
 	-- Цвет фона в левой части UI
-    Header = Color3.fromRGB(255,250,250),
+    Header = Color3.fromRGB(15,15,15),
 	-- Цвет текста
-    TextColor = Color3.fromRGB(0,0,0),
+    TextColor = Color3.fromRGB(255,255,255),
 	-- Цвет фона у кнопок
-    ElementColor = Color3.fromRGB(255,250,250)
+    ElementColor = Color3.fromRGB(20, 20, 20)
     },
     RJTheme3 = {
+	-- Цвет фона у Секций
+    SchemeColor = Color3.fromRGB(91, 94, 176),
+	-- Цвет фона в правой части UI
+	Background = Color3.fromRGB(15,15,15),
+	-- Цвет фона в левой части UI
+    Header = Color3.fromRGB(15,15,15),
+	-- Цвет текста
+    TextColor = Color3.fromRGB(255,255,255),
+	-- Цвет фона у кнопок
+    ElementColor = Color3.fromRGB(20, 20, 20)
+    },
+   RJTheme3 = {
 	-- Цвет фона у Секций
     SchemeColor = Color3.fromRGB(255,250,250),
 	-- Цвет фона в правой части UI
@@ -88,79 +101,67 @@ local themeStyles = {
 	-- Цвет текста
     TextColor = Color3.fromRGB(0,0,0),
 	-- Цвет фона у кнопок
-    ElementColor = Color3.fromRGB(255,250,250)
-    },
-    RJTheme3 = {
-	-- Цвет фона у Секций
-    SchemeColor = Color3.fromRGB(255,250,250),
-	-- Цвет фона в правой части UI
-	Background = Color3.fromRGB(255,250,250),
-	-- Цвет фона в левой части UI
-    Header = Color3.fromRGB(255,250,250),
-	-- Цвет текста
-    TextColor = Color3.fromRGB(0,0,0),
-	-- Цвет фона у кнопок
-    ElementColor = Color3.fromRGB(255,250,250)
+    ElementColor = Color3.fromRGB(0,0,0)
     },
     RJTheme4 = {
 	-- Цвет фона у Секций
-    SchemeColor = Color3.fromRGB(255,250,250),
+    SchemeColor = Color3.fromRGB(128, 77, 112),
 	-- Цвет фона в правой части UI
-	Background = Color3.fromRGB(255,250,250),
+	Background = Color3.fromRGB(15,15,15),
 	-- Цвет фона в левой части UI
-    Header = Color3.fromRGB(255,250,250),
+    Header = Color3.fromRGB(15,15,15),
 	-- Цвет текста
-    TextColor = Color3.fromRGB(0,0,0),
+    TextColor = Color3.fromRGB(255,255,255),
 	-- Цвет фона у кнопок
-    ElementColor = Color3.fromRGB(255,250,250)
+    ElementColor = Color3.fromRGB(20, 20, 20)
     },
     RJTheme5 = {
 	-- Цвет фона у Секций
-    SchemeColor = Color3.fromRGB(255,250,250),
+    SchemeColor = Color3.fromRGB(150, 141, 71),
 	-- Цвет фона в правой части UI
-	Background = Color3.fromRGB(255,250,250),
+	Background = Color3.fromRGB(15,15,15),
 	-- Цвет фона в левой части UI
-    Header = Color3.fromRGB(255,250,250),
+    Header = Color3.fromRGB(15,15,15),
 	-- Цвет текста
-    TextColor = Color3.fromRGB(0,0,0),
+    TextColor = Color3.fromRGB(255,255,255),
 	-- Цвет фона у кнопок
-    ElementColor = Color3.fromRGB(255,250,250)
+    ElementColor = Color3.fromRGB(20, 20, 20)
     },
     RJTheme6 = {
         	-- Цвет фона у Секций
-    SchemeColor = Color3.fromRGB(255,250,250),
+    SchemeColor = Color3.fromRGB(86, 128, 61),
 	-- Цвет фона в правой части UI
-	Background = Color3.fromRGB(255,250,250),
+	Background = Color3.fromRGB(15,15,15),
 	-- Цвет фона в левой части UI
-    Header = Color3.fromRGB(255,250,250),
+    Header = Color3.fromRGB(15,15,15),
 	-- Цвет текста
-    TextColor = Color3.fromRGB(0,0,0,)
+    TextColor = Color3.fromRGB(255,255,255),
 	-- Цвет фона у кнопок
-    ElementColor = Color3.fromRGB(255,250,250)
+    ElementColor = Color3.fromRGB(20, 20, 20)
     },
     RJTheme7 = {
 	-- Цвет фона у Секций
-    SchemeColor = Color3.fromRGB(255,250,250),
+    SchemeColor = Color3.fromRGB(95, 81, 168),
 	-- Цвет фона в правой части UI
-	Background = Color3.fromRGB(255,250,250),
+	Background = Color3.fromRGB(15,15,15),
 	-- Цвет фона в левой части UI
-    Header = Color3.fromRGB(255,250,250),
+    Header = Color3.fromRGB(15,15,15),
 	-- Цвет текста
-    TextColor = Color3.fromRGB(0,0,0),
+    TextColor = Color3.fromRGB(255,255,255),
 	-- Цвет фона у кнопок
-    ElementColor = Color3.fromRGB(255,250,250)
+    ElementColor = Color3.fromRGB(20, 20, 20)
     },
     RJTheme8 = {
     -- Цвет фона у Секций
-    SchemeColor = Color3.fromRGB(255,250,250),
+    SchemeColor = Color3.fromRGB(150, 72, 148),
 	-- Цвет фона в правой части UI
-	Background = Color3.fromRGB(255,250,250),
+	Background = Color3.fromRGB(15,15,15),
 	-- Цвет фона в левой части UI
-    Header = Color3.fromRGB(255,250,250),
+    Header = Color3.fromRGB(15,15,15),
 	-- Цвет текста
-    TextColor = Color3.fromRGB(0,0,0),
+    TextColor = Color3.fromRGB(255,255,255),
 	-- Цвет фона у кнопок
-    ElementColor = Color3.fromRGB(255,250,250)
+    ElementColor = Color3.fromRGB(20, 20, 20)
     }
 }
 local oldTheme = ""
@@ -220,7 +221,7 @@ function Kavo.CreateLib(kavName, themeList)
         elseif themeList.Header == nil then
             themeList.Header = Color3.fromRGB(28, 29, 34)
         elseif themeList.TextColor == nil then
-            themeList.TextColor = Color3.fromRGB(255,250,250)
+            themeList.TextColor = Color3.fromRGB(255,255,255)
         elseif themeList.ElementColor == nil then
             themeList.ElementColor = Color3.fromRGB(32, 32, 38)
         end
@@ -482,8 +483,8 @@ function Kavo.CreateLib(kavName, themeList)
             page.Visible = true
             for i,v in next, tabFrames:GetChildren() do
                 if v:IsA("TextButton") then
-                    if themeList.SchemeColor == Color3.fromRGB(255,250,250) then
-                        Utility:TweenObject(v, {TextColor3 = Color3.fromRGB(255,250,250)}, 0.2)
+                    if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
+                        Utility:TweenObject(v, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
                     end 
                     if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
                         Utility:TweenObject(v, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
@@ -491,11 +492,11 @@ function Kavo.CreateLib(kavName, themeList)
                     Utility:TweenObject(v, {BackgroundTransparency = 1}, 0.2)
                 end
             end
-            if themeList.SchemeColor == Color3.fromRGB(255,250,250) then
+            if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
                 Utility:TweenObject(tabButton, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
             end 
             if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-                Utility:TweenObject(tabButton, {TextColor3 = Color3.fromRGB(255,250,250)}, 0.2)
+                Utility:TweenObject(tabButton, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
             end 
             Utility:TweenObject(tabButton, {BackgroundTransparency = 0}, 0.2)
         end)
@@ -578,11 +579,11 @@ function Kavo.CreateLib(kavName, themeList)
             Objects[sectionName] = "TextColor3"
             sectionName.TextSize = 14.000
             sectionName.TextXAlignment = Enum.TextXAlignment.Left
-            if themeList.SchemeColor == Color3.fromRGB(255,250,250) then
+            if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
                 Utility:TweenObject(sectionName, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
             end 
             if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-                Utility:TweenObject(sectionName, {TextColor3 = Color3.fromRGB(255,250,250)}, 0.2)
+                Utility:TweenObject(sectionName, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
             end 
                
             sectionInners.Name = "sectionInners"
@@ -718,11 +719,11 @@ function Kavo.CreateLib(kavName, themeList)
                 btnInfo.TextSize = 14.000
                 btnInfo.TextXAlignment = Enum.TextXAlignment.Left
 
-                if themeList.SchemeColor == Color3.fromRGB(255,250,250) then
+                if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
                     Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
                 end 
                 if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,250,250)}, 0.2)
+                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
                 end 
 
                 updateSectionFrame()
@@ -914,11 +915,11 @@ function Kavo.CreateLib(kavName, themeList)
                 moreInfo.TextSize = 14.000
                 moreInfo.TextXAlignment = Enum.TextXAlignment.Left
 
-                if themeList.SchemeColor == Color3.fromRGB(255,250,250) then
+                if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
                     Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
                 end 
                 if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,250,250)}, 0.2)
+                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
                 end 
 
                 UICorner.CornerRadius = UDim.new(0, 4)
@@ -1120,11 +1121,11 @@ function Kavo.CreateLib(kavName, themeList)
 
                     local ms = game.Players.LocalPlayer:GetMouse()
 
-                    if themeList.SchemeColor == Color3.fromRGB(255,250,250) then
+                    if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
                         Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
                     end 
                     if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-                        Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,250,250)}, 0.2)
+                        Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
                     end 
 
                     local btn = toggleElement
@@ -1392,11 +1393,11 @@ function Kavo.CreateLib(kavName, themeList)
                 UICorner.CornerRadius = UDim.new(0, 4)
                 UICorner.Parent = moreInfo
 
-                if themeList.SchemeColor == Color3.fromRGB(255,250,250) then
+                if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
                     Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
                 end 
                 if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,250,250)}, 0.2)
+                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
                 end 
 
 
@@ -1721,11 +1722,11 @@ function Kavo.CreateLib(kavName, themeList)
                 UICorner.CornerRadius = UDim.new(0, 4)
                 UICorner.Parent = moreInfo
 
-                if themeList.SchemeColor == Color3.fromRGB(255,250,250) then
+                if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
                     Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
                 end 
                 if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,250,250)}, 0.2)
+                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
                 end 
 
                 viewInfo.MouseButton1Click:Connect(function()
@@ -2115,11 +2116,11 @@ function Kavo.CreateLib(kavName, themeList)
                 UICorner1.CornerRadius = UDim.new(0, 4)
                 UICorner1.Parent = moreInfo
 
-                if themeList.SchemeColor == Color3.fromRGB(255,250,250) then
+                if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
                     Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
                 end 
                 if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,250,250)}, 0.2)
+                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
                 end 
 
                 UICorner.CornerRadius = UDim.new(0, 4)
@@ -2476,11 +2477,11 @@ function Kavo.CreateLib(kavName, themeList)
                 togName_2.TextSize = 14.000
                 togName_2.TextXAlignment = Enum.TextXAlignment.Left
 
-                if themeList.SchemeColor == Color3.fromRGB(255,250,250) then
+                if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
                     Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
                 end 
                 if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,250,250)}, 0.2)
+                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
                 end 
                 local hovering = false
 
@@ -2501,11 +2502,11 @@ function Kavo.CreateLib(kavName, themeList)
                     end
                 end)        
 
-                if themeList.SchemeColor == Color3.fromRGB(255,250,250) then
+                if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
                     Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
                 end 
                 if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,250,250)}, 0.2)
+                    Utility:TweenObject(moreInfo, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
                 end 
                 coroutine.wrap(function()
                     while wait() do
@@ -2657,11 +2658,11 @@ function Kavo.CreateLib(kavName, themeList)
 	           	UICorner.CornerRadius = UDim.new(0, 4)
                 UICorner.Parent = label
             	
-	            if themeList.SchemeColor == Color3.fromRGB(255,250,250) then
+	            if themeList.SchemeColor == Color3.fromRGB(255,255,255) then
 	                Utility:TweenObject(label, {TextColor3 = Color3.fromRGB(0,0,0)}, 0.2)
 	            end 
 	            if themeList.SchemeColor == Color3.fromRGB(0,0,0) then
-	                Utility:TweenObject(label, {TextColor3 = Color3.fromRGB(255,250,250)}, 0.2)
+	                Utility:TweenObject(label, {TextColor3 = Color3.fromRGB(255,255,255)}, 0.2)
 	            end 
 
 		        coroutine.wrap(function()
